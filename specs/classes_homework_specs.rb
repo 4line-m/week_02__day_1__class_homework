@@ -1,4 +1,50 @@
-# Classes Lab / Homework
+require ("minitest/autorun")
+require ("minitest/rg")
+require_relative("../classes_homework.rb")
+
+class TestStudent < MiniTest::Test
+  # @student
+
+def setup
+  @student = Student.new("Aline", 16)
+end
+
+#getters
+def test_name
+  assert_equal("Aline", @student.student_name)
+end
+
+def test_cohort
+  assert_equal(16, @student.student_cohort)
+end
+
+#setters
+
+def test_set_student_name
+@student.set_student_name("Chris")
+assert_equal("Chris", @student.student_name)
+end
+
+def test_set_student_cohort
+  @student.set_student_cohort(16)
+  assert_equal(16, @student.student_cohort)
+end
+
+#not a getter or a setter
+#not overriting, just adding
+
+def test_student_talk
+  assert_equal("Student Aline talking.", @student.talk)
+end
+
+def test_favourite_programming_language
+  result = @student.favourite_programming_language("Ruby")
+  assert_equal("I love Ruby", result)
+end
+
+end #class end
+
+#Classes Lab / Homework
 #
 # In this lab, we'd like you to make some classes of your own. Below we've outlined a few scenarios to be modelled as Classes. Throughout each part stick to using our Test Driven Development process of writing our tests first then writing our methods and refactoring until they pass.
 #
