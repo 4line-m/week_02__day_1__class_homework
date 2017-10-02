@@ -49,7 +49,6 @@ end #class end
 #Classes Lab / Homework
 #
 # In this lab, we'd like you to make some classes of your own. Below we've outlined a few scenarios to be modelled as Classes. Throughout each part stick to using our Test Driven Development process of writing our tests first then writing our methods and refactoring until they pass.
-#
 # Learning Objectives
 #
 # Create your own class
