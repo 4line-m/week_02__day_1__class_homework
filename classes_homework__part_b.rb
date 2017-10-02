@@ -19,3 +19,7 @@ end
 def coach
   return @coach
 end
+
+def new_coach(name)
+ @coach = name
+end

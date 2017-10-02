@@ -21,3 +21,8 @@ def test_players
  def test_coach
  assert_equal("Coach_1", @team1.coach)
  end
+
+ def test_new_coach
+    @team1.coach="Coach_2"
+    assert_equal("Coach_2", @team1.coach)
+  end
