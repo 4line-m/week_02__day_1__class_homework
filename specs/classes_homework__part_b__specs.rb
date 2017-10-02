@@ -9,3 +9,15 @@ class TestSportsTeam < MiniTest::Test
 
   end
 end
+
+def test_team_name
+assert_equal("Team_1", @team_1.team_name)
+end
+
+def test_players
+   assert_equal(["Player_1", "Player_2", "Player_3"], @team1.players)
+ end
+
+ def test_coach
+ assert_equal("Coach_1", @team1.coach)
+ end
