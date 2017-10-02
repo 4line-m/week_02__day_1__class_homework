@@ -30,4 +30,9 @@ end
    assert_equal(["Player_1", "Player_2", "Player_3", "Player_4"], @team_1.players)
  end
 
+ def test_player_check
+    result = @team_1.player_check("Player_3")
+    assert_equal(true, result)
+  end
+  
 end

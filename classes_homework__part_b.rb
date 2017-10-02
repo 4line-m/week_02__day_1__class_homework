@@ -27,4 +27,10 @@ def set_new_player(player)
    @players.push(player)
 end
 
+def player_check(name)
+    for player in @players
+      return true if player == name
+    end
+end
+
 end
