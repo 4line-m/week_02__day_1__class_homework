@@ -5,7 +5,7 @@ require_relative("../classes_homework__part_b.rb")
 class TestSportsTeam < MiniTest::Test
 
   def setup
-      @team_1= SportsTeam.new("Team_1", ["Player_1", "Player_2", "Player_3"], "Coach_1")
+      @team_1= SportsTeam.new("Team_1", ["Player_1", "Player_2", "Player_3"], "Coach_1", 0)
   end
 
 def test_team_name
@@ -34,5 +34,5 @@ end
     result = @team_1.player_check("Player_3")
     assert_equal(true, result)
   end
-  
+
 end
