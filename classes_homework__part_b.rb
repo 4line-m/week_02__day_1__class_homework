@@ -5,6 +5,7 @@ attr_accessor :team_name, :players, :coach, :points
       @team_name = team_name
       @players = players
       @coach = coach
+      @points = points
   end
 
 # def team_name
@@ -31,6 +32,10 @@ def player_check(name)
     for player in @players
       return true if player == name
     end
+end
+
+def add_points(result)
+    return @points += 3 if result == "win"
 end
 
 end
