@@ -22,7 +22,7 @@ def test_players
  assert_equal("Coach_1", @team1.coach)
  end
 
- def test_new_coach
-    @team1.coach="Coach_2"
+ def test_set_new_coach
+    @team1.set_new_coach="Coach_2"
     assert_equal("Coach_2", @team1.coach)
   end
