@@ -40,4 +40,4 @@ def test_add_points
   assert_equal(3, @team_1.points)
 end
 
-end
+end #class

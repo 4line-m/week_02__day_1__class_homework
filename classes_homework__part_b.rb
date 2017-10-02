@@ -38,4 +38,4 @@ def add_points(result)
     return @points += 3 if result == "win"
 end
 
-end
+end #class
